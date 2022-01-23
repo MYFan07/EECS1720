@@ -1,3 +1,5 @@
+Java/CSS/P5.Js practice Week1:(1.17-1.23)
+
 public class ConstantDemo {
     
     public static void main(String[] args) {
@@ -6,3 +8,133 @@ public class ConstantDemo {
         System.out.println("abcd");
         System.out.println("1234");
         System.out.println("");
+
+------------------------------------------
+
+public class DataTypeDemo01 {
+    
+    public static void main(String[] args) {
+  
+        byte num01 = 12;//----》 int
+        int  num02 = 14;
+        int num3 = num01 + num02;
+       int num04 = 124;
+        double num05 = 123.5;
+        double num06 = num04+num05;
+    }    
+}
+
+------------------------------------------
+public class StaticTest
+{
+    static
+    {
+        System.out.println(“Hi”);
+    }
+ 
+    public void print()
+    {
+        System.out.println(“Hello”);
+    }
+ 
+    public static void main(String args[])
+    {
+        StaticTest st1 = new StaticTest();
+        st1.print();
+        StaticTest st2 = new StaticTest();
+        st2.print();
+    }
+}
+
+------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mengyao </title>
+    <!--<link type="text/css" rel="stylesheet" href="css/style.css">-->
+    <!-- css.link-->
+    <style type="text/css">
+        @import "css/style.css";
+    </style>
+</head>
+<body>
+    <div>is div1</div>
+    <div>is div2</div>
+
+</body>
+</html>
+
+------------------------------------------
+#title{
+    font-size: 18px; /*size*/
+    font-weight: bold; 
+    line-height: 35px; /*high*/
+    background-color: #0f7cbf; /*background color*/
+    color: white; /*color*/
+}
+
+.secondTitle{
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 30px;
+    background-color: #e4f1fa;
+    color: #0f7cbf;
+}
+------------------------------------------
+h1{
+    text-align: center; /*一级标题居中显示*/
+}
+
+span{
+    color: blue; /*font color*/
+    font-style: italic; 
+    font-weight: bold; 
+    font-size: 16px; /*font size*/
+  
+    text-decoration: underline; 
+}
+
+p{
+    line-height: 30px; /*high*/
+}
+
+------------------------------------------
+function setup() {  
+   
+    // Creating Canvas size 
+    createCanvas(600, 160);  
+}  
+   
+function draw() {  
+       
+    // Set the background color  
+    background(220);  
+     
+    // Initializing some values 
+    let Value1 = 12; 
+    let Value2 = 12.5; 
+    let Value3 = -7.9; 
+    let Value4 = -6; 
+    let Value5 = "6"; 
+     
+    // Calling to str() function. 
+    let A = str(Value1); 
+    let B = str(Value2); 
+    let C = str(Value3); 
+    let D = str(Value4); 
+    let E = str(Value5); 
+       
+    // Set the size of text  
+    textSize(16);  
+       
+    // Set the text color  
+    fill(color('red'));  
+     
+    // Getting string representation 
+    text("String representation of value 12 is: " + A, 50, 30); 
+    text("String representation of value 12.5 is: " + B, 50, 60); 
+    text("String representation of value -7.9 is: " + C, 50, 90); 
+    text("String representation of value -6 is: " + D, 50, 110); 
+    text("String representation of string '6' is: " + E, 50, 140); 
+} 
