@@ -83,7 +83,7 @@ public class StaticTest
 }
 ------------------------------------------
 h1{
-    text-align: center; /*一级标题居中显示*/
+    text-align: center; 
 }
 
 span{
@@ -138,3 +138,117 @@ function draw() {
     text("String representation of value -6 is: " + D, 50, 110); 
     text("String representation of string '6' is: " + E, 50, 140); 
 } 
+
+
+practice Week2:（1.24-1.30）
+html.
+<!DOCTYPE html>
+
+<html lang="En">
+<head>
+  <meta charset="UTF-8">
+  <title> pracice </title>
+  <link rel="stylesheet" type="text/css" href="11.css" title="style"/>
+  
+
+  
+</head>
+<body>
+
+  <header>
+    <h1> My Computational Thinking Kit </h1>
+	<nav>
+
+  	  <button>Problem01</button>
+
+	</nav>
+  </header>
+  
+  <div id="problem" class="problem">
+  </div>
+  <div class="column1 design">
+	<input id="check1" type="checkbox"/> Design
+ 	<img id="flowchart" src="null" alt="null"/>
+  </div>
+  <div class="column2 jsSolution">
+	<input id="check2" type="checkbox"/> JavaScript Solution
+	 <img id="js" src="null" alt="null" />
+  </div>
+  <div class="column3 otherSolution">
+	<input id="check3" type="checkbox"/> Another Solution
+	<img id="another" src="null" alt="null" />
+  </div>
+
+  <footer>(c) Author of this web page: <span>Mengyao Fan
+  </span> </footer>
+</body>
+</html>
+---------------------
+css change:
+.content { 
+    border: 2px solid blue;  
+}
+.diary{
+    border-top: 2px solid lime;
+    border: 5px solid lime;
+    border-right:2px solid lime;
+    border-left: 2px solid lime;
+    border-bottom :2px solid lime;
+}
+ span{
+     border: 3px solid cyan;
+     border-color: 3px solid cyan;
+     }
+p{
+    border: 1px solid grey;
+}
+footer{
+    border: 2px solid magenta;
+}
+--------------------------------
+css change plus:
+.content { 
+    margin: 1% 5%;
+    border: 4px solid white;  
+    background-color: rgb(94, 94, 92);
+}
+.diary{
+    border-top: 2px solid rgb(216, 216, 225); ;
+    border: 3px solid  rgb(216, 216, 225);
+    border-right:2px solid  rgb(216, 216, 225);
+    border-left: 2px solid  rgb(216, 216, 225);
+    border-bottom :4px solid r rgb(216, 216, 225);
+    background-color: rgb(236, 236, 245);
+    margin-top: 10px;
+    padding: 10px;
+    overflow: hidden;
+    margin-left: 236px;
+    
+}
+ span{
+    font-style: italic;
+    color: slategrey;
+     }
+footer{
+    text-align: center;
+}
+body{
+    background-image: url(images/paper.png);
+    margin-left: 10px;margin-right: 10px;
+}
+header {
+    text-align: right;
+    font-family: sans-serif;
+    background-color: rgb(216, 216, 225);
+}
+img{
+    float: right;
+}
+nav{
+    float: left;
+    width: 110px;
+    margin: 10px 10px;
+    padding: 50px;
+    border: 3px solid rgb(216, 216, 225);
+    background-color: rgb(236, 236, 245);
+}
